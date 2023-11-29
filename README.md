@@ -5,11 +5,11 @@ Bechmarking Ollama models installed on my machine
 * The output will be in the log file in the markdown format: [model_test.md](model_test.md)
 * Here are three sample queries:
 
-| query                                                                                                 | output          |
-|-------------------------------------------------------------------------------------------------------|-----------------|
-| "Write a python code to make the simulation of the solid on solid (SOS) model on lattice of size 500" | model_test_1.md |
-| "Please give a precise workflow for git branching and merging"                                        | model_test_2.md |
-| "Give some suggestions to become a better supervisor for Ph.D. students"                              | model_test_3.md |
+| query                                                                                                 | output                          |
+|-------------------------------------------------------------------------------------------------------|---------------------------------|
+| "Write a python code to make the simulation of the solid on solid (SOS) model on lattice of size 500" | [model_test_1](model_test_1.md) |
+| "Please give a precise workflow for git branching and merging"                                        | [model_test_2](model_test_2.md) |
+| "Give some suggestions to become a better supervisor for Ph.D. students"                              | [model_test_3](model_test_3.md) |
 
 * The following models are tested:
   * "mistral:latest"
@@ -23,3 +23,6 @@ Bechmarking Ollama models installed on my machine
   * "codellama:34b"
   * "vicuna:latest"
   * "wizardcoder:latest"
+
+# License
+  [MIT](LICENSE
