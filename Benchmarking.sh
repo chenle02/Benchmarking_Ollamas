@@ -26,6 +26,7 @@ EchoLog() {
 EchoLog ""
 EchoLog "Do you want to test all models (input 1) or only partial models (input anything else)?"
 read choice
+EchoLog ""
 
 if [ "$choice" = "1" ]; then
   EchoLog "## Testing all models..."
@@ -58,6 +59,7 @@ default_query1="Write a python code to make the simulation of the solid on solid
 default_query2="Please give a precise workflow for git branching and merging"
 default_query3="Give some suggestions to become a better supervisor for Ph.D. students"
 
+EchoLog ""
 EchoLog "Please select an option:"
 EchoLog "0. Input query"
 EchoLog "1. Default query 1: $default_query1"
