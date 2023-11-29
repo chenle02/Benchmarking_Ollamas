@@ -83,7 +83,7 @@ read choice
 custom_query_input() {
     EchoLog "Enter your query:"
     read query
-    EchoLog "Your custom query is: $custom_query"
+    EchoLog "Your custom query is: $query"
 }
 
 # Switch case to handle choices
