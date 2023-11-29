@@ -10,6 +10,7 @@ Bechmarking Ollama models installed on my machine
 | "Write a python code to make the simulation of the solid on solid (SOS) model on lattice of size 500" | [model_test_1](model_test_1.md) |
 | "Please give a precise workflow for git branching and merging"                                        | [model_test_2](model_test_2.md) |
 | "Give some suggestions to become a better supervisor for Ph.D. students"                              | [model_test_3](model_test_3.md) |
+| "Give some suggestions for Ph.D. students in mathematics."                                            | [model_test_4](model_test_4.md) |
 
 * The following models are tested:
   * "mistral:latest"
