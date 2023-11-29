@@ -89,10 +89,6 @@ case $choice in
     *) EchoLog "Invalid input"
 esac
 
-EchoLog "What is your query?"
-read query
-EchoLog "query: $query"
-
 # Loop through the list of llama runs and print each one
 for model in "${models[@]}"; do
   EchoLog ""
