@@ -18,6 +18,11 @@ fi
 log_file="model_test.md"
 echo "# Benchmarking ollama models..." | tee "$log_file"
 
+# Path to the configuration file
+config_file="models.conf"
+
+declare -A model_times
+
 EchoLog() {
     echo "$@" | tee -a "$log_file"
 }
@@ -34,19 +39,21 @@ if [ "$choice" = "1" ]; then
   EchoLog "models:"
   ollama list
 else
-  EchoLog "## Testing partial models..."
-  models=(
-    "mistral:latest"
-    "orca2:latest"
-    "llama2:latest"
-    "llama2:13b"
-    "llama2:70b"
-    "llama2-uncensored:latest"
-    "codellama:latest"
-    "codellama:13b"
-    "codellama:34b"
-    "vicuna:latest"
-    "wizardcoder:latest")
+  EchoLog "## Testing partial models from ./models.conf..."
+  readarray -t models < "$config_file"
+  # models=(
+  #   "mistral:latest"
+  #   "orca2:latest"
+  #   "llama2:latest"
+  #   "llama2:13b"
+  #   # "llama2:70b"
+  #   "llama2-uncensored:latest"
+  #   "codellama:latest"
+  #   "codellama:13b"
+  #   "codellama:34b"
+  #   "vicuna:latest"
+  #   "wizardcoder:latest"
+  # )
   EchoLog "models:"
   for model in "${models[@]}"; do
     EchoLog "* $model"
@@ -67,6 +74,7 @@ EchoLog "1. Default query 1: $default_query1"
 EchoLog "2. Default query 2: $default_query2"
 EchoLog "3. Default query 3: $default_query3"
 EchoLog "4. Default query 4: $default_query4"
+EchoLog ""
 
 # Read the user's choice
 read choice
@@ -104,7 +112,22 @@ for model in "${models[@]}"; do
   start_time=$(date +%s)
   ollama run "$model" "$query" | tee -a "$log_file"
   end_time=$(date +%s)
+  execution_time=$((end_time - start_time))
+  model_times["$model"]=$execution_time
   EchoLog ""
-  EchoLog "* Execution time for $model: $((end_time - start_time)) seconds."
+  EchoLog "* Execution time for $model: ${execution_time} seconds."
   EchoLog ""
 done
+
+# Function to print the table of execution times
+print_time_table() {
+    EchoLog "## Model Execution Times"
+    EchoLog "| Model | Time (seconds) |"
+    EchoLog "|-------|----------------|"
+    for model in "${!model_times[@]}"; do
+        EchoLog "| $model | ${model_times[$model]} |"
+    done
+}
+
+# Print the table
+print_time_table
