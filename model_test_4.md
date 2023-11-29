@@ -176,3 +176,19 @@ It's important to note that these are just general suggestions and not all will 
 
 ### Testing codellama:34b
 
+
+As a Ph.D. student in mathematics, here are some suggestions that may help you succeed in your program:
+
+1. Stay organized: Keep track of your coursework, readings, and research progress. Use a planner or a digital tool to stay organized and focused.
+2. Attend office hours: Regularly attend your advisor's office hours to discuss your progress, ask questions, and get feedback on your work.
+3. Participate in seminars: Seminars are a great way to learn from other students and professors. Be an active participant by asking questions, sharing your ideas, and engaging in discussions.
+4. Collaborate with peers: Working with other Ph.D. students can help you stay motivated, learn new techniques, and build valuable connections in the field.
+5. Stay up to date: Keep up to date with the latest developments in your field by reading research papers, attending conferences, and participating in workshops.
+6. Take breaks: Math can be challenging, so make sure to take breaks and practice self-care to avoid burnout.
+7. Seek help when needed: Don't hesitate to seek help from your advisor or other resources if you're struggling with a concept or need additional support.
+8. Stay open-minded: Be open to new ideas and perspectives, and be willing to challenge your own assumptions and biases.
+9. Learn to write clearly: Develop strong writing skills by practicing writing clear and concise mathematical proofs, theorems, and research papers.
+10. Network: Build connections with other mathematicians in your field, attend conferences, and participate in online forums to advance your career and stay connected to the math community.
+
+By following these suggestions, you can set yourself up for success as a Ph.D. student in mathematics and position yourself for a rewarding and fulfilling academic career.
+
