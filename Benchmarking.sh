@@ -55,9 +55,10 @@ fi
 
 
 # Default queries
-default_query1="Write a python code to make the simulation of the solid on solid (SOS) model on lattice of size 500"
-default_query2="Please give a precise workflow for git branching and merging"
-default_query3="Give some suggestions to become a better supervisor for Ph.D. students"
+default_query1="Write a python code to make the simulation of the solid on solid (SOS) model on lattice of size 500."
+default_query2="Please give a precise workflow for git branching and merging."
+default_query3="Give some suggestions to become a better supervisor for Ph.D. students."
+default_query4="Give some suggestions for Ph.D. students in mathematics."
 
 EchoLog ""
 EchoLog "Please select an option:"
@@ -65,6 +66,7 @@ EchoLog "0. Input query"
 EchoLog "1. Default query 1: $default_query1"
 EchoLog "2. Default query 2: $default_query2"
 EchoLog "3. Default query 3: $default_query3"
+EchoLog "4. Default query 4: $default_query4"
 
 # Read the user's choice
 read choice
@@ -87,6 +89,9 @@ case $choice in
        ;;
     3) EchoLog "Selected query: $default_query3"
        query=$default_query3
+       ;;
+    4) EchoLog "Selected query: $default_query4"
+       query=$default_query4
        ;;
     *) EchoLog "Invalid input"
 esac
