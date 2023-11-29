@@ -25,4 +25,4 @@ Bechmarking Ollama models installed on my machine
   * "wizardcoder:latest"
 
 # License
-  [MIT](LICENSE
+  [MIT](LICENSE)
