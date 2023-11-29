@@ -16,13 +16,13 @@ fi
 
 # Define the log file
 log_file="model_test.md"
+echo "# Benchmarking ollama models..." | tee "$log_file"
 
 EchoLog() {
     echo "$@" | tee -a "$log_file"
 }
 
 
-EchoLog "# Benchmarking ollama models..."
 EchoLog ""
 EchoLog "Do you want to test all models (input 1) or only partial models (input anything else)?"
 read choice
@@ -95,7 +95,7 @@ for model in "${models[@]}"; do
   EchoLog "### Testing $model"
   EchoLog ""
   start_time=$(date +%s)
-  ollama run "$model" "$query"
+  ollama run "$model" "$query" | tee -a "$log_file"
   end_time=$(date +%s)
   EchoLog ""
   EchoLog "* Execution time for $model: $((end_time - start_time)) seconds."
