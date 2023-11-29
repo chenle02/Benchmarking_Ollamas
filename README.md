@@ -25,6 +25,7 @@ Bechmarking Ollama models installed on my machine
   * "codellama:34b"
   * "vicuna:latest"
   * "wizardcoder:latest"
+* You can edit [models.conf](models.conf) file to add or remove models.
 
 # License
   [MIT](LICENSE)
