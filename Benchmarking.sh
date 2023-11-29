@@ -3,8 +3,9 @@ if [[ $# -eq 0 ]] || [[ "$1" == "--help" ]]
 then
   echo ""
   echo ""
-  echo "Usage: $0 [Query|--help]"
+  echo "Usage: $0 [--help]"
   echo "Test existing ollama models on the machine with the given query."
+  echo "Results are saved in the log file: model_test.md"
   echo "by Le CHEN, (chenle02@gmail.com)"
   echo "Mon 27 Nov 2023 10:59:55 PM CST"
   echo ""
